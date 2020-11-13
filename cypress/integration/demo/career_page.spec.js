@@ -4,12 +4,12 @@ context('Career Page', () => {
     })
 
     it('contains a scrum master vacancy', () => {
-        cy.get('a[href="https://apply.workable.com/thrive-tribe-ltd/j/4430B5324C/"]')
+        cy.get('div.jobs a[href*="apply.workable.com"]').eq(0)
         .children('p').eq(0).should('contain', 'Scrum Master')
     })
 
     it('contains a software engineer vacancy', () => {
-        cy.get('a[href="https://apply.workable.com/thrive-tribe-ltd/j/378F4D6B0F/"]')
+        cy.get('div.jobs a[href*="apply.workable.com"]').eq(1)
         .children('p').eq(0).should('contain', 'Software Engineer')
     })
 
