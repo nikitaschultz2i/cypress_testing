@@ -1,6 +1,6 @@
 {
     "reporter": "junit",
     "reporterOptions": {
-        "mochaFile": "results/thrive-tribe-cypress-results.xml"
+        "mochaFile": "results/cypress-results[hash].xml"
     }
 }
